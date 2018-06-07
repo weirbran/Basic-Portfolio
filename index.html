@@ -4,33 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <title>About Me</title>
-  <!-- <link rel="stylesheet" type="text/css" href="floats.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> 
 </head>
 
 <body>
-  <header>
-      <h1>
-      Brandon Weir
-      </h1>
-      <h6>
-        About
-      </h6>
-      <h6>
-        Portfolio
-      </h6>
-      <h6>
-        Contact
-      </h6>
 
-      <!-- the h6 headers all have to be links to the other pages  -->
+  <header class="clearfix">
+    <section class="header-content">
+      <h1>
+        <b>
+          Brandon Weir
+        </b>
+      </h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </section>
   </header>
 
-<section class="main">
-  <h1>
-      About Me
-  </h1>
+
+<div class="clearfix">
+  <section class="content">
+  <h2>
+     <b>About Me</b> 
+  </h2>
   <hr>
-  <img src="https://loremflickr.com/320/240/planet" /> alt="Brandon Weir"/>
+  <img src="https://loremflickr.com/240/160/planet" alt="Brandon Weir"/>
   <p>
     This is just placeholder text for what I'm actually going to write.
     This is just placeholder text for what I'm actually going to write.
@@ -42,16 +44,60 @@
     This is just placeholder text for what I'm actually going to write.
     This is just placeholder text for what I'm actually going to write.
     This is just placeholder text for what I'm actually going to write.
-    This is just placeholder text for what I'm actually going to write. 
+    This is just placeholder text for what I'm actually going to write.    
+    This is just placeholder text for what I'm actually going to write.
+    This is just placeholder text for what I'm actually going to write.
+    This is just placeholder text for what I'm actually going to write.
+    This is just placeholder text for what I'm actually going to write.  
 </p>
 </section>
+</div>
 
 <footer>
+  <div id="footer">
     Copyright&#169;
+  </div>
 </footer>
+
+
 
 
 </body>
 
 
 </html>
+
+<!-- ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+} -->
+
+<!--the header will contain the h1 for my name and 
+the unordered list for the nav links 
+
+there will also have to be a div wrapper around the 
+header and ul with a width of 960px
+
+div="main content", width=960px
+
+and use this container to wrap the section below 
+and the div can be transparent???-->

@@ -1,52 +1,63 @@
-<!DOCTYPE>
+<!DOCTYPE html>
   <html lang="en-us">
 
     <head>
         <meta charset="UTF-8">
         <title>Contact Me</title>
-        <!--<link rel="stylesheet" type="text/css" href="floats.css"> -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     </head>
 
     <body>
-        <header>
-          <h1>
-            Brandon Weir
-          </h1>
-          <h6>
-            About
-          </h6>
-          <h6>
-            Portfolio
-          </h6>
-          <h6>
-            Contact
-          </h6>
-          
-          <!-- the h6 headers all have to be links to the other pages  -->
+    
+        <header class="clearfix">
+          <section class="header-content">
+            <h1>
+              <b>
+                Brandon Weir
+              </b>
+            </h1>      
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </section>
         </header>
 
-        <section class="main">
-                <h1>
+
+
+<div class="clearfix">
+        <section class="content">
+                <h2>
                     Contact
-                </h1>
+                </h2>
                 <hr>
         <form action="/action_page.php">
-            Name<br>
-            <input type="text" name="firstandlastname" value="">
             <br>
-            Email<br>
-            <input type="text" name="email" value="">
-            Message<br>
-            <input type="text" name="message" value="">
-            <br><br>
+              Name
+            <br>
+          <input type="text" name="firstandlastname" value="">
+            <br>
+              Email
+            <br>
+          <input type="text" name="email" value="">
+            <br>
+            Message
+            <br>
+            <textarea></textarea>
+          <!-- <input type="text" name="message" value=""  class="messagebox"> -->
             <input type="submit" value="Submit">
         </form> 
 
     </section>
+    </div>
     
-        <footer>
-           Copyright&#169;
-        </footer>
+    <footer>
+      <div id="footer">
+        Copyright&#169;
+      </div>
+    </footer>
 
     </body>
     </html>
