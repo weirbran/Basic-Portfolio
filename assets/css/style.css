@@ -1,104 +1,133 @@
-body{
-    background-image: url("concrete_seamless.png");
-    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-    color: #777777;
-    overflow: auto;
+* {
+  box-sizing: border-box;
 }
 
-header{
-    width: 100%;
-    height: 100%;
-    left: 0;
-    background-color:#ffffff;
-    border-bottom: 2px solid #cccccc;
-    margin-bottom: 30px;
-    align-content: center;  
-    text-align: center; 
+body {
+  background-image: url("concrete_seamless.png");
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #777777;
+  line-height: 1.8;
 }
 
-.header-content{
-    max-width: 960px;
-    align-content: center;
-    margin: auto;
+.headercontent {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-h1{
-    float: left;
-    background-color:#4aaaa5;   
-    color: white;
-    font-size:  2em;
-    font-family: "Georgia", Times, "Times New Roman", serif;
-    font-weight: bold;
-    margin-left: 20px;
-    padding: 20px;
+header {
+  width: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  border-bottom: 2px solid #cccccc;
+  margin-bottom: 30px;
+  align-content: center;
+  text-align: center;
 }
 
-div{
-    max-width: 960px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+#myname {
+  float: left;
+  background-color: #4aaaa5;
+  color: white;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  /* margin-left: 20px; */
+  padding: 20px;
 }
 
-.content{
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding: 30px;
+nav {
+  float: right;
+  margin-top: 25px;
 }
 
-ul{
-    float: right;
-    margin-top: 25px;
-    font-size: 15px;
-}
-
-li{
-    float: left;
-    margin-left: 20px;
-    border-right: 1 solid #777777;
-}
-
-a{
-    color: #777777;
+nav a {
+  color: #777777;
+  margin-right: 10px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-h2{
-      margin-left: 20px;
-      color: #4aaaa5;   
-      font-family: Georgia, Times, "Times New Roman", serif;
-      font-size: 30px;
-      font-weight: bold;   
+  content: "";
+  display: table;
+  clear: both;
 }
 
-hr{
-    width: 100%;
+.main-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-color: #dddddd;
+  margin-bottom: 100px;
 }
 
-img{
+.main-content {
+  padding: 20px;
+}
+
+h1 {
+  color: #4aaaa5;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#my-image {
+  float: left;
+  margin: 15 20 15 0;
+  height: auto;
+}
+
+.portfolio-project{
     float: left;
-    margin: 20px; 
-    max-height: 90px;
+    margin: 15px;
+    position: relative;
+    left: 55px;
 }
 
-p{
-    margin: 20px;
-    margin-bottom: 20px;
-    line-height: 1.6;
+.portfolio-content{
+    margin: 0 auto;
+    padding: 20px;
 }
 
-form{   
-    margin-top: 10px;
+h3{
+  background-color: #4aaaa5;
+  color: white;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  /* margin-left: 20px; */
+  padding: 10px;
+  position: absolute; 
+  bottom: 5px;
+  width: 100%;
+}
+
+form {
+  margin-top: 0px;
 }
 
 input{
     margin-top: 10px;
     margin-bottom: 10px;    
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+}
+
+textarea{
+    height: 200px;
 }
 
 input[type=submit] {
@@ -109,36 +138,23 @@ input[type=submit] {
     border: none;
 }
 
-text-area{
-    height: 300px;
-    width: 100%;
-    margin-bottom: 30px;
-    position: fixed;
-}
-
-.image{
-    float: left;
-    width: 33%;
-    margin: 0 auto;
-}
-
-
 footer{
+    background-color: #666666;
     width: 100%;
-    height: 50px;
+    height 50px;
     align-content: center;
     text-align: center;
     font-size: 10px;
-    background-color: #666666;
+    color: white;
     position: fixed;
     left: 0;
     bottom: 0;
     border-top: 10px solid #4aaaa5;
-    margin-top: 50px;   
-    color: white;
+    margin-top: 50px;
+    padding-bottom: 5px;
+
 }
 
 #footer{    
     margin-top: 35px;
 }
-
